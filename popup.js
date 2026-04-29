@@ -16,6 +16,11 @@
   function createTweetCard(tweet) {
     const card = document.createElement("div");
     card.className = "tweet-card";
+    card.addEventListener("click", () => {
+      if (tweet.url) {
+        window.open(tweet.url, "_blank");
+      }
+    });
 
     const left = document.createElement("div");
     left.className = "card-left";
@@ -65,14 +70,6 @@
       right.appendChild(imageContainer);
     }
 
-    const link = document.createElement("a");
-    link.className = "tweet-link";
-    link.href = tweet.url;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.textContent = "View original";
-
-    right.appendChild(link);
     card.append(left, right);
     return card;
   }

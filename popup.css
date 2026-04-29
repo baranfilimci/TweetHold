@@ -70,6 +70,13 @@ body {
   border: 1px solid #2f3336;
   border-radius: 14px;
   padding: 12px;
+  cursor: pointer;
+  transition: background-color 120ms ease-in-out, border-color 120ms ease-in-out;
+}
+
+.tweet-card:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-color: #3b4b5c;
 }
 
 .card-left {
@@ -130,19 +137,6 @@ body {
   max-height: 220px;
   object-fit: cover;
   display: block;
-}
-
-.tweet-link {
-  display: inline-flex;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 500;
-  color: #93c5fd;
-}
-
-.tweet-link:hover {
-  color: #bfdbfe;
-  text-decoration: underline;
 }
 
 .empty {
