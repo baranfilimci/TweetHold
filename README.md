@@ -14,6 +14,7 @@ Never miss a tweet again. TweetHold is a Chrome Extension (Manifest V3) that rem
 
 - No external network requests are made by the extension.
 - Data is stored only in `chrome.storage.local` on your browser profile.
+- Full policy: [Privacy Policy](./PRIVACY_POLICY.md)
 
 ## Install from source (GitHub clone)
 
